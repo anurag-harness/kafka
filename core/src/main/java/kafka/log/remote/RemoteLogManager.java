@@ -144,7 +144,7 @@ import static org.apache.kafka.server.log.remote.metadata.storage.TopicBasedRemo
 import static org.apache.kafka.server.log.remote.storage.RemoteStorageMetrics.REMOTE_LOG_MANAGER_TASKS_AVG_IDLE_PERCENT_METRIC;
 import static org.apache.kafka.server.log.remote.storage.RemoteStorageMetrics.REMOTE_LOG_READER_FETCH_RATE_AND_TIME_METRIC;
 
-/**
+/** 
  * This class is responsible for
  * - initializing `RemoteStorageManager` and `RemoteLogMetadataManager` instances
  * - receives any leader and follower replica events and partition stop events and act on them
@@ -183,8 +183,6 @@ public class RemoteLogManager implements Closeable {
     private final RLMScheduledThreadPool followerThreadPool;
 
     private final long delayInMs;
-    private final long delayInMs2;
-
 
     private final ConcurrentHashMap<TopicIdPartition, RLMTaskWithFuture> leaderCopyRLMTasks = new ConcurrentHashMap<>();
     private final ConcurrentHashMap<TopicIdPartition, RLMTaskWithFuture> leaderExpirationRLMTasks = new ConcurrentHashMap<>();
