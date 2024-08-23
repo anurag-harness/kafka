@@ -75,7 +75,7 @@ public class RLMQuotaManager {
             if (metric != null) {
                 LOGGER.info("Sensor for quota-id {} already exists. Setting quota to {} in MetricConfig", quotaMetricName, newQuota);
                 metric.config(getQuotaMetricConfig(newQuota));
-                LOGGER.info("log demo sample");
+                LOGGER.info("log demo sample  ");
             }
         } finally {
             lock.writeLock().unlock();
