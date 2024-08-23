@@ -201,7 +201,7 @@ public class RemoteLogManager implements Closeable {
     private volatile boolean remoteLogManagerConfigured = false;
     private final Timer remoteReadTimer;
 
-    /**
+    /** 
      * Creates RemoteLogManager instance with the given arguments.
      *
      * @param rlmConfig Configuration required for remote logging subsystem(tiered storage) at the broker level.
