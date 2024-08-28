@@ -47,7 +47,7 @@ public class FinalContext extends ShareFetchContext {
     @Override
     public int responseSize(LinkedHashMap<TopicIdPartition, ShareFetchResponseData.PartitionData> updates, short version) {
         return ShareFetchResponse.sizeOf(version, updates.entrySet().iterator());
-    }
+    } 
 
     @Override
     public ShareFetchResponse updateAndGenerateResponseData(String groupId, Uuid memberId,
