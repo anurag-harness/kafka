@@ -376,6 +376,7 @@ public class AssignmentsManagerTest {
                 if (foundPartitions.contains(1)) {
                     if (failureType.equals("missingResult")) {
                         // do nothing
+                        // check
                     } else if (failureType.equals("errorResult")) {
                         partitions.add(new AssignReplicasToDirsResponseData.PartitionData().
                             setPartitionIndex(1).
