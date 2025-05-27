@@ -150,7 +150,7 @@ import static org.apache.kafka.server.log.remote.quota.RLMQuotaManagerConfig.INA
 import static org.apache.kafka.server.log.remote.storage.RemoteStorageMetrics.REMOTE_LOG_MANAGER_TASKS_AVG_IDLE_PERCENT_METRIC;
 import static org.apache.kafka.server.log.remote.storage.RemoteStorageMetrics.REMOTE_LOG_READER_FETCH_RATE_AND_TIME_METRIC;
 
-/**
+/** 
  * This class is responsible for
  * - initializing `RemoteStorageManager` and `RemoteLogMetadataManager` instances
  * - receives any leader and follower replica events and partition stop events and act on them
